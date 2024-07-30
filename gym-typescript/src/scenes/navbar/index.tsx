@@ -10,8 +10,8 @@ import ActionButton from '@/shared/ActionButton'
 type Props ={
     page: string;
     selectedPage: SelectedPage;
-    setSelectedPage: (value : SelectedPage) => void;
-    isTopOfPage: boolean
+    isTopOfPage: boolean;
+    setSelectedPage: (value: SelectedPage) => void;
 }
 
 const Navbar = ({
@@ -59,7 +59,7 @@ const [isMenuToggle, setIsMenuToggle] = useState<boolean>(false)
                     <p>Sign In</p>
                     <ActionButton
                     setSelectedPage={setSelectedPage}
-                    >Become a memver</ActionButton>
+                    >Become a member</ActionButton>
                 </div> 
             </div>
             : (
