@@ -1,5 +1,6 @@
 import Navbar from "@/scenes/navbar";
 import Home from "@/scenes/home";
+import Benefits from "@/scenes/benefits" 
 import { useEffect, useState } from "react";
 import { SelectedPage } from "./shared/types";
 
@@ -30,13 +31,16 @@ const handleScroll = () =>{
   <div className="app bg-gray-20">
    <Navbar
    isTopOfPage ={isTopOfPage}
-   page="home"
    selectedPage={selectedPage}
    setSelectedPage={setSelectedPage}
    />
 
    <Home
     setSelectedPage={setSelectedPage}
+   />
+    <Benefits
+    setSelectedPage={setSelectedPage}
+    children
    />
       </div>
   );
